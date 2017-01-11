@@ -1,4 +1,5 @@
 # Routes
 
-# An example controller showing how to write asynchronous code
-GET     /message                    com.demo.api.controllers.AsyncController.message
+GET     /feedbacks               com.microdocs.api.controllers.FeedbackController.getAllFeedbacks
+GET     /feedback                com.microdocs.api.controllers.FeedbackController.getFeedbacksForProduct(productId: Int)
+POST    /feedback                com.microdocs.api.controllers.FeedbackController.addFeedback
